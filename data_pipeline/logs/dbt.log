@@ -1,0 +1,89 @@
+[0m08:22:06.788062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023948E8D1F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239462F1AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023949584F80>]}
+
+
+============================== 08:22:06.799062 | 059391be-9706-4909-bb06-7a5cca1c88ba ==============================
+[0m08:22:06.799062 [info ] [MainThread]: Running with dbt=1.10.10
+[0m08:22:06.801062 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt init data_pipeline', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m08:22:06.862059 [debug] [MainThread]: Starter project path: C:\Users\adnan\OneDrive\Documents\Sacred Compass Dashboard\data_pipeline\my_env\Lib\site-packages\dbt\include\starter_project
+[0m08:22:06.917094 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:22:06.922064 [info ] [MainThread]: Setting up your profile.
+[0m08:23:31.405580 [info ] [MainThread]: Profile data_pipeline written to C:\Users\adnan\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m08:23:31.411581 [debug] [MainThread]: Command `dbt init` succeeded at 08:23:31.410582 after 84.94 seconds
+[0m08:23:31.412581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023949F579E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394AF87A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023949584F80>]}
+[0m08:23:31.414587 [debug] [MainThread]: Flushing usage events
+[0m08:23:32.775892 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:57:37.832188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A88CA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A88CBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A88CAD0>]}
+
+
+============================== 17:57:37.847190 | 31ca2fac-026b-49e4-9cdf-46086c47045d ==============================
+[0m17:57:37.847190 [info ] [MainThread]: Running with dbt=1.10.10
+[0m17:57:37.850189 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'empty': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\adnan\\.dbt'}
+[0m17:57:37.853189 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\adnan\OneDrive\Documents\Sacred Compass Dashboard\data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:57:37.858188 [debug] [MainThread]: Command `dbt run` failed at 17:57:37.858188 after 0.33 seconds
+[0m17:57:37.861191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A88C2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A88C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7A88CBF0>]}
+[0m17:57:37.863190 [debug] [MainThread]: Flushing usage events
+[0m17:57:39.761762 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:59:54.685635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012710AA3470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001270D7174D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001270E600620>]}
+
+
+============================== 17:59:54.697632 | cc96b822-50b1-4a47-ab51-ad1d2790cfc7 ==============================
+[0m17:59:54.697632 [info ] [MainThread]: Running with dbt=1.10.10
+[0m17:59:54.700631 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m17:59:54.702638 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\adnan\OneDrive\Documents\Sacred Compass Dashboard\data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:59:54.706635 [debug] [MainThread]: Command `dbt run` failed at 17:59:54.706635 after 0.31 seconds
+[0m17:59:54.708630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012711320BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001271030A0F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001270E19B530>]}
+[0m17:59:54.710634 [debug] [MainThread]: Flushing usage events
+[0m17:59:56.553251 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:01:06.198037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208F3C596A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208F44B86B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208F4461EB0>]}
+
+
+============================== 18:01:06.207042 | 98c6c3f4-7dad-473a-ab3f-d8b381f8a70e ==============================
+[0m18:01:06.207042 [info ] [MainThread]: Running with dbt=1.10.10
+[0m18:01:06.209037 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m18:01:06.211040 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\adnan\OneDrive\Documents\Sacred Compass Dashboard\data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:01:06.215043 [debug] [MainThread]: Command `dbt run` failed at 18:01:06.215043 after 0.37 seconds
+[0m18:01:06.217040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208F166EBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208F48A85C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208EE2459D0>]}
+[0m18:01:06.219044 [debug] [MainThread]: Flushing usage events
+[0m18:01:07.914460 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:34:47.155868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002729757CB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002729757CDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002729757CB00>]}
+
+
+============================== 08:34:47.172881 | ca7f217b-0c19-497f-ba23-1eac32e13117 ==============================
+[0m08:34:47.172881 [info ] [MainThread]: Running with dbt=1.10.10
+[0m08:34:47.177883 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m08:34:47.179882 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\adnan\OneDrive\Documents\Sacred Compass Dashboard\data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:34:47.186634 [debug] [MainThread]: Command `dbt run` failed at 08:34:47.186120 after 0.47 seconds
+[0m08:34:47.189448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002729757C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002729757C800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002729757C8F0>]}
+[0m08:34:47.191977 [debug] [MainThread]: Flushing usage events
+[0m08:34:48.840990 [debug] [MainThread]: An error was encountered while trying to flush usage events
