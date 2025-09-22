@@ -34,7 +34,7 @@ query = """
 with event_data as (
 	select distinct
 		event_name 
-		, event_date 
+		, to_date(event_date, 'DD/MM/YYYY') as event_date, 
 		, row_number() over(order by event_date::date desc) as event_date_order
 		
 	from rdv.event_hub
@@ -56,7 +56,7 @@ with event_data as (
 		, ph.participant_email 
         , ph.participant_location
 		, eh.event_name
-		, eh.event_date::date as event_date
+		, to_date(eh.event_date, 'DD/MM/YYYY') as event_date
         , eh.event_city
 		, ed.event_date_order
 
