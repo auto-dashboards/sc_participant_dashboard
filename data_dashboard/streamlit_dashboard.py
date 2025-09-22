@@ -35,7 +35,7 @@ with event_data as (
 	select distinct
 		event_name 
 		, to_date(event_date, 'DD/MM/YYYY') as event_date
-		, row_number() over(order by event_date::date desc) as event_date_order
+		, row_number() over(order by to_date(event_date, 'DD/MM/YYYY') desc) as event_date_order
 		
 	from rdv.event_hub
 )
@@ -96,7 +96,7 @@ select
     , avg(participant_distance_travelled) as participant_avg_distance_travelled
 	, (ROUND((COUNT(DISTINCT event_name)::float / (SELECT COUNT(DISTINCT event_name)::float FROM event_data))::numeric, 2)) * 100 AS percentage_events_attended
 	, min(event_date_order) as latest_event_attended_order
-	, (select max(event_date::date) from event_data) - max(event_date::date) as days_from_latest_event
+	, (select max(event_date) from event_data) - max(event_date) as days_from_latest_event
 	
 from base_data as bd
 group by participant_email, participant_location
